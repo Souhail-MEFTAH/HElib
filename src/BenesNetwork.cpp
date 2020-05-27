@@ -282,7 +282,7 @@ GeneralBenesNetwork::GeneralBenesNetwork(const Permut& perm)
 
   for (long j = 0; j < n; j++) {
     //OLD: assert(iperm[j] != -1);
-    helib::assertTrue(iperm[j] == -1l, "permutation element not processed");
+    helib::assertTrue(iperm[j] != -1l, "permutation element not processed");
   }
 
   // allocate space for the levels graph
